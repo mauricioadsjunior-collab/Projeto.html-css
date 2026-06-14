@@ -10,9 +10,11 @@ body{
 
 .esquerda{
     width: 50%;
-    background-color: #163fd8;
+    height: 640px;
     color: white;
-    padding: 80px;
+    padding: 80px 80px;;
+    background-image: url(imagem_650x850.png);
+    align-content: center;
 }
 
 .direita{
