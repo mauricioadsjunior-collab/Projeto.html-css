@@ -4,20 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <title>HUI - Cadastro</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <div class="esquerda">
-        <img src="Logo.png" alt="" style: height="90px"; width="90px"; dis>
+    <!-- LADO ESQUERDO -->
+    <div class="esquerda">
 
-            <h3>HUI - Hub Universitário de Inovação</h3>
+    <div class="conteudo-esquerda">
 
-            <h1>O epicentro da inovação brasileira.</h1>
+        <div class="marca">
 
+            <img src="Logo.png" class="logo">
+
+            <div>
+
+                <h3>HUI - Hub Universitário de Inovação</h3>
+
+                <span>ACADEMIA & INDÚSTRIA</span>
+
+            </div>
             <p>
                 Conectamos mentes brilhantes, infraestrutura </br>
                 pública e capital privado para acelerar o desenvolvimento tecnológico.
@@ -25,71 +35,127 @@
 
         </div>
 
-        <div class="direita">
 
-            <h1>Crie sua conta</h1>
+        <h1>
+            O epicentro da
+            inovação brasileira.
+        </h1>
 
-            <p>
-                Selecione seu perfil e preencha as informações institucionais.
-            </p>
-
-            <h4>TIPO DE PERFIL</h4>
-
-            <div class="perfis">
-
-                <button class="perfil">
-                    Pesquisador
-                </button>
-
-                <button class="perfil ativo">
-                    Empresa
-                </button>
-
-                <button class="perfil">
-                    Governo
-                </button>
-
-            </div>
-
-            <form>
-
-                <label>Nome Completo</label><br>
-                <input type="text" placeholder="Ex: Dr. Roberto Silva">
-
-                <label>E-mail Institucional</label><br>
-                <input type="email" placeholder="nome@instituicao.edu.br">
-
-                <label>Senha</label><br>
-                <input type="password" placeholder="Mínimo 8 caracteres">
-
-                <br><br>
-
-               <div class="checkbox-container">
-    <input type="checkbox" id="termos">
-    <label for="termos">
-        Eu concordo com os Termos de Uso e Política de Privacidade.
-    </label>
-</div>
-
-                <br><br>
-
-                <button class="botao">
-                    Cadastrar
-                </button>
-
-            </form>
-
-            <br>
-
-            <p>
-                Já possui uma conta?
-                <a href="#">Fazer Login</a>
-            </p>
-
-        </div>
+        <p>
+            Conectamos mentes brilhantes,
+            infraestrutura pública e capital privado
+            para acelerar o desenvolvimento tecnológico.
+        </p>
 
     </div>
 
+</div>
+
+    <!-- LADO DIREITO -->
+<div class="direita">
+
+    <h1>Crie sua conta</h1>
+
+    <p>
+        Selecione seu perfil e preencha as informações institucionais.
+    </p>
+
+    <h4>TIPO DE PERFIL</h4>
+
+    <div class="perfis">
+
+        <button class="perfil">
+            <img src="./imagens/pesquisador.jpeg" class="icone">
+            <span>Pesquisador</span>
+        </button>
+
+        <button class="perfil ativo">
+            <img src="./imagens/empresa.jpeg" class="icone">
+            <span>Empresa</span>
+        </button>
+
+        <button class="perfil">
+            <img src="./imagens/governo.jpeg" class="icone">
+            <span>Governo</span>
+        </button>
+
+    </div>
+
+
+    <form>
+
+        <label>Nome Completo</label>
+
+        <input
+        type="text"
+        placeholder="Ex: Dr. Roberto Silva">
+
+
+        <label>E-mail Institucional</label>
+
+        <input
+        type="email"
+        placeholder="nome@instituicao.edu.br">
+
+
+        <label>Senha</label>
+
+        <input
+        type="password"
+        placeholder="Mínimo 8 caracteres">
+
+
+        <div class="checkbox-container">
+
+            <input
+            type="checkbox"
+            id="termos">
+
+            <label for="termos">
+
+                Eu concordo com os
+
+                <a href="#">
+                    Termos de Uso
+                </a>
+
+                e a
+
+                <a href="#">
+                    Política de Privacidade
+                </a>
+                do HUB.
+            </label>
+
+        </div>
+
+
+        <button class="botao">
+
+            Cadastrar
+
+        </button>
+
+    </form>
+
+
+    <p class="login">
+
+        Já possui uma conta?
+
+        <a href="#">
+            Fazer Login
+        </a>
+
+    </p>
+
+
+    <footer>
+
+        © 2026 HUI — Todos os direitos reservados.
+
+</div>
+        
 </body>
 
 </html>

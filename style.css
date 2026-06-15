@@ -1,91 +1,320 @@
 body{
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin:0;
+
+    font-family:Arial;
+
 }
 
 .container{
-    display: flex;
-    height: 100vh;
+    display:flex;
+
+    height:100vh;
 }
+
+
+/* LADO ESQUERDO */
 
 .esquerda{
-    width: 50%;
-    height: 800px;
-    color: white;
-    padding: 80px 80px;;
-    background-image: url(WhatsApp\ Image\ 2026-06-14\ at\ 18.22.44.jpeg);
-    align-content: center;
+
+    width:50%;
+
+    height:100vh;
+
+    color:white;
+
+    background-image:
+    linear-gradient(
+        rgba(0,40,180,.75),
+        rgba(0,40,180,.75)
+    ),
+
+    url("./imagens/fundo.jpeg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
 }
+
+
+.conteudo-esquerda{
+
+    width:70%;
+
+}
+
+
+.marca{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-bottom:40px;
+
+}
+
+
+.logo{
+
+    width:90px;
+
+}
+
+
+.marca h3{
+
+    margin:0;
+
+    font-size:18px;
+
+}
+
+
+.marca span{
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+}
+
+
+.esquerda h1{
+
+    font-size:64px;
+
+    line-height:1;
+
+    margin-bottom:30px;
+
+}
+
+
+.esquerda p{
+
+    width:75%;
+
+    font-size:22px;
+
+    line-height:1.7;
+
+}
+
+/* DIREITA */
 
 .direita{
-    width: 50%;
-    background-color: #f5f5f5;
-    padding: 60px;
-}
 
-h1{
-    font-size: 50px;
-}
+    width:50%;
 
-p{
-    font-size: 18px;
-}
+    background:#f5f5f5;
 
+    padding:60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
 .perfis{
-    display: flex;
-    gap: 15px;
-    margin-bottom: 30px;
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:30px;
+
 }
+
+
+
+/* BOTÕES */
 
 .perfil{
-    width: 120px;
-    height: 90px;
-    border: 1px solid #ccc;
-    background-color: white;
-    border-radius: 8px;
-    cursor: pointer;
+
+    width:170px;
+
+    height:110px;
+
+    background:white;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.perfil:hover{
+
+    transform:scale(1.02);
+
 }
 
 .perfil.ativo{
-    background-color: #2450e6;
-    color: white;
+
+    background:#2450e6;
+
+    color:white;
+
 }
+
+.icone{
+
+    width:35px;
+
+    height:35px;
+
+}
+
+
+
+/* INPUTS */
 
 input{
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:15px;
+
+    border-radius:6px;
+
+    border:1px solid #ccc;
+
+    box-sizing:border-box;
+
 }
 
+
+
+.checkbox-container{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.checkbox-container input{
+
+    width:18px;
+
+}
+
+
+
+/* BOTÃO */
+
 .botao{
-    width: 100%;
-    padding: 15px;
-    background-color: #2450e6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+    width:100%;
+
+    padding:18px;
+
+    margin-top:30px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#2450e6;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
 }
 
 .botao:hover{
-    background-color: #163fd8;
+
+    background:#1739b6;
+
 }
+
+
+
+.login{
+
+    text-align:center;
+
+    margin-top:30px;
 
 .checkbox-container {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+/* LINKS TERMOS */
 
-.checkbox-container input {
-    margin: 0;
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
+.checkbox-container a{
+
+    color:#2450e6;
+
+    text-decoration:none;
+
+    font-weight:600;
+
 }
 
-.checkbox-container label {
-    margin: 0;
+.checkbox-container a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+/* LOGIN */
+
+.login{
+
+    margin-top:25px;
+
+    text-align:center;
+
+}
+
+
+
+/* RODAPÉ */
+
+footer{
+
+    margin-top:auto;
+
+    text-align:left;
+
+    color:#8b8b8b;
+
+    font-size:14px;
+
+    line-height:1.8;
+
 }
