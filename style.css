@@ -72,6 +72,7 @@ input{
 .botao:hover{
     background-color: #163fd8;
 }
+
 .checkbox-container {
     display: flex;
     align-items: center;
